@@ -1,0 +1,16 @@
+const str="noon";
+function checkPalindrome(str)
+{
+    for(let i=0;i<str.length;i++)
+    {
+    var left=i;
+    var right=str.length-1-i;
+    if(str[left]!=str[right])
+       {
+        return false;
+       }
+    }
+    return true;
+}
+
+const checks=checkPalindrome(str)>0?console.log('the string is a palindrome'):console.log('the string is not a palindrome');
